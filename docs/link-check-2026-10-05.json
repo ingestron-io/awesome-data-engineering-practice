@@ -1,0 +1,103 @@
+{
+  "accessDate": "2026-10-05",
+  "method": "Bounded HTTP HEAD",
+  "results": [
+    {
+      "title": "Incremental copy with ADF",
+      "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
+      "status": 200,
+      "destination": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview"
+    },
+    {
+      "title": "Delta MERGE",
+      "url": "https://docs.databricks.com/aws/en/delta/merge",
+      "status": 200,
+      "destination": "https://docs.databricks.com/aws/en/delta/merge"
+    },
+    {
+      "title": "Structured Streaming programming guide",
+      "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+      "status": 200,
+      "destination": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html"
+    },
+    {
+      "title": "SQL reference",
+      "url": "https://spark.apache.org/docs/latest/sql-ref.html",
+      "status": 200,
+      "destination": "https://spark.apache.org/docs/latest/sql-ref.html"
+    },
+    {
+      "title": "Performance tuning",
+      "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html",
+      "status": 200,
+      "destination": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+    },
+    {
+      "title": "Lakeflow expectations",
+      "url": "https://docs.databricks.com/aws/en/ldp/expectations",
+      "status": 200,
+      "destination": "https://docs.databricks.com/aws/en/ldp/expectations"
+    },
+    {
+      "title": "Row filters and column masks",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/",
+      "status": 200,
+      "destination": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/"
+    },
+    {
+      "title": "Fabric security overview",
+      "url": "https://learn.microsoft.com/en-us/fabric/security/security-overview",
+      "status": 200,
+      "destination": "https://learn.microsoft.com/en-us/fabric/security/security-overview"
+    },
+    {
+      "title": "Unity Catalog access control",
+      "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/",
+      "status": 200,
+      "destination": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/"
+    },
+    {
+      "title": "ADF CI/CD",
+      "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery",
+      "status": 200,
+      "destination": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery"
+    },
+    {
+      "title": "Fabric deployment pipelines",
+      "url": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+      "status": 200,
+      "destination": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines"
+    },
+    {
+      "title": "Databricks bundles",
+      "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+      "status": 200,
+      "destination": "https://docs.databricks.com/aws/en/dev-tools/bundles/"
+    },
+    {
+      "title": "Azure data platform architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/",
+      "status": 200,
+      "destination": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/"
+    },
+    {
+      "title": "Architecture decision records",
+      "url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+      "status": 200,
+      "destination": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record"
+    },
+    {
+      "title": "Fabric samples",
+      "url": "https://github.com/microsoft/fabric-samples",
+      "status": 200,
+      "destination": "https://github.com/microsoft/fabric-samples"
+    },
+    {
+      "title": "Fabric toolbox",
+      "url": "https://github.com/microsoft/fabric-toolbox",
+      "status": 200,
+      "destination": "https://github.com/microsoft/fabric-toolbox"
+    }
+  ],
+  "limit": "Availability is not a licence, endorsement or execution qualification."
+}

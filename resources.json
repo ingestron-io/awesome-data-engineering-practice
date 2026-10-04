@@ -1,0 +1,121 @@
+[
+  {
+    "category": "retries",
+    "title": "Incremental copy with ADF",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
+    "why": "Compare watermark and change-tracking routes before choosing a cursor."
+  },
+  {
+    "category": "retries",
+    "title": "Delta MERGE",
+    "author": "Databricks",
+    "url": "https://docs.databricks.com/aws/en/delta/merge",
+    "why": "Read duplicate-match and runtime rules before designing an upsert."
+  },
+  {
+    "category": "retries",
+    "title": "Structured Streaming programming guide",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+    "why": "Understand state, checkpoints and delivery semantics before claiming safe replay."
+  },
+  {
+    "category": "spark",
+    "title": "SQL reference",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/sql-ref.html",
+    "why": "Check null, join and expression behaviour against the engine reference."
+  },
+  {
+    "category": "spark",
+    "title": "Performance tuning",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html",
+    "why": "Use plans and runtime evidence to choose a tuning change."
+  },
+  {
+    "category": "quality",
+    "title": "Lakeflow expectations",
+    "author": "Databricks",
+    "url": "https://docs.databricks.com/aws/en/ldp/expectations",
+    "why": "Compare warning, drop and failure behaviour for quality rules."
+  },
+  {
+    "category": "governance",
+    "title": "Row filters and column masks",
+    "author": "Databricks",
+    "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/",
+    "why": "Check privileges and limitations; test with the actual reader identity."
+  },
+  {
+    "category": "governance",
+    "title": "Fabric security overview",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/fabric/security/security-overview",
+    "why": "Separate workspace, item and data permissions before granting access."
+  },
+  {
+    "category": "governance",
+    "title": "Unity Catalog access control",
+    "author": "Databricks",
+    "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/",
+    "why": "Understand ownership and grants instead of assuming workspace membership is sufficient."
+  },
+  {
+    "category": "delivery",
+    "title": "ADF CI/CD",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery",
+    "why": "Plan Git authoring, environment configuration and release steps."
+  },
+  {
+    "category": "delivery",
+    "title": "Fabric deployment pipelines",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+    "why": "Review supported items and stage behaviour before designing release automation."
+  },
+  {
+    "category": "delivery",
+    "title": "Databricks bundles",
+    "author": "Databricks",
+    "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
+    "why": "Keep job configuration and deployment targets under version control."
+  },
+  {
+    "category": "architecture",
+    "title": "Azure data platform architecture",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/",
+    "why": "Compare architecture choices against a defined workload rather than a tool list."
+  },
+  {
+    "category": "project",
+    "title": "Architecture decision records",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "why": "Capture the decision, alternatives and consequences for the next maintainer."
+  },
+  {
+    "category": "examples",
+    "title": "Fabric samples",
+    "author": "Microsoft contributors",
+    "url": "https://github.com/microsoft/fabric-samples",
+    "why": "Find platform examples; inspect each sample's prerequisites and licence."
+  },
+  {
+    "category": "examples",
+    "title": "Fabric toolbox",
+    "author": "Microsoft contributors",
+    "url": "https://github.com/microsoft/fabric-toolbox",
+    "why": "Find operational utilities and review each tool before using it."
+  },
+  {
+    "category": "examples",
+    "title": "Original engineering recipes",
+    "author": "Pipeline Practice",
+    "url": "https://github.com/ingestron-io/data-engineering-recipes",
+    "why": "Run small synthetic examples for replay, joins, quarantine and release review."
+  }
+]
