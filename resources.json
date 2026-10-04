@@ -1,121 +1,472 @@
 [
   {
-    "category": "retries",
-    "title": "Incremental copy with ADF",
+    "category": "databricks",
+    "title": "Handle duplicate matches before MERGE",
+    "author": "Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+    "why": "Use when a replay or multiple source rows can update the same business key. Compare runtime-specific matching rules.",
+    "requires": "Databricks and Delta tables",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Choose a reaction to failed quality checks",
+    "author": "Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+    "why": "Compare retain, drop and stop behaviour before deciding what happens to a bad row.",
+    "requires": "Lakeflow pipeline and supported runtime",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Apply row filters and column masks",
+    "author": "Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+    "why": "Use for reader-specific access. Check compute limitations and test an actual reader identity.",
+    "requires": "Unity Catalog, supported compute and policy permissions",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Review Unity Catalog grants",
+    "author": "Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/",
+    "why": "Trace ownership and grants when a user can open a workspace but cannot query a table.",
+    "requires": "Unity Catalog and authorised identities",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Version jobs with Declarative Automation Bundles",
+    "author": "Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+    "why": "Keep job definitions, code and environment targets together. Older material calls these Asset Bundles.",
+    "requires": "Databricks CLI; authenticated workspace for validation/deployment",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Bundle examples",
+    "author": "Databricks contributors",
+    "url": "https://github.com/databricks/bundle-examples",
+    "why": "Start from a relevant job example and inspect its resources before deployment.",
+    "requires": "Databricks workspace; individual examples can provision services",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Databricks CLI",
+    "author": "Databricks contributors",
+    "url": "https://github.com/databricks/cli",
+    "why": "Use local commands to inspect workspace resources and work with bundles.",
+    "requires": "Local binary; workspace authentication for remote commands",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Databricks SDK for Python",
+    "author": "Databricks contributors",
+    "url": "https://github.com/databricks/databricks-sdk-py",
+    "why": "Inspect API examples for repeatable inventory and job automation instead of browser clicking.",
+    "requires": "Python; workspace authentication and API permissions",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "DQX quality rules",
+    "author": "Databricks Labs contributors",
+    "url": "https://github.com/databrickslabs/dqx",
+    "why": "Explore rule definitions and good/bad row splits. Labs publishes this without a support SLA.",
+    "requires": "PySpark; check each example runtime and optional cloud dependencies",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Unity Catalog migration assessment",
+    "author": "Databricks Labs contributors",
+    "url": "https://github.com/databrickslabs/ucx",
+    "why": "Inspect assessment reports before planning a legacy metastore migration. Review permissions before running.",
+    "requires": "Authorised Databricks workspace; Labs support limitations",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "fabric",
+    "title": "Understand lakehouse ingestion and transformation",
     "author": "Microsoft",
-    "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
-    "why": "Compare watermark and change-tracking routes before choosing a cursor."
+    "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-introduction",
+    "why": "Follow the end-to-end data flow, then inspect where incremental updates enter it.",
+    "requires": "Fabric workspace and capacity; cloud tutorial",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "retries",
-    "title": "Delta MERGE",
-    "author": "Databricks",
-    "url": "https://docs.databricks.com/aws/en/delta/merge",
-    "why": "Read duplicate-match and runtime rules before designing an upsert."
-  },
-  {
-    "category": "retries",
-    "title": "Structured Streaming programming guide",
-    "author": "Apache Spark",
-    "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
-    "why": "Understand state, checkpoints and delivery semantics before claiming safe replay."
-  },
-  {
-    "category": "spark",
-    "title": "SQL reference",
-    "author": "Apache Spark",
-    "url": "https://spark.apache.org/docs/latest/sql-ref.html",
-    "why": "Check null, join and expression behaviour against the engine reference."
-  },
-  {
-    "category": "spark",
-    "title": "Performance tuning",
-    "author": "Apache Spark",
-    "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html",
-    "why": "Use plans and runtime evidence to choose a tuning change."
-  },
-  {
-    "category": "quality",
-    "title": "Lakeflow expectations",
-    "author": "Databricks",
-    "url": "https://docs.databricks.com/aws/en/ldp/expectations",
-    "why": "Compare warning, drop and failure behaviour for quality rules."
-  },
-  {
-    "category": "governance",
-    "title": "Row filters and column masks",
-    "author": "Databricks",
-    "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/",
-    "why": "Check privileges and limitations; test with the actual reader identity."
-  },
-  {
-    "category": "governance",
-    "title": "Fabric security overview",
+    "category": "fabric",
+    "title": "Load files and tables from a notebook",
     "author": "Microsoft",
-    "url": "https://learn.microsoft.com/en-us/fabric/security/security-overview",
-    "why": "Separate workspace, item and data permissions before granting access."
+    "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-notebook-load-data",
+    "why": "Check Files versus Tables and relative versus ABFS paths before moving a notebook.",
+    "requires": "Fabric notebook and lakehouse",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "governance",
-    "title": "Unity Catalog access control",
-    "author": "Databricks",
-    "url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/",
-    "why": "Understand ownership and grants instead of assuming workspace membership is sufficient."
-  },
-  {
-    "category": "delivery",
-    "title": "ADF CI/CD",
+    "category": "fabric",
+    "title": "Review notebook code and bindings in Git",
     "author": "Microsoft",
-    "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery",
-    "why": "Plan Git authoring, environment configuration and release steps."
+    "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/notebook-source-control-deployment",
+    "why": "Check notebook source and target lakehouse/environment bindings during a release.",
+    "requires": "Fabric workspace, Git integration and item ownership",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "delivery",
-    "title": "Fabric deployment pipelines",
+    "category": "fabric",
+    "title": "Check supported items in Git integration",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration",
+    "why": "Check supported items and provider limitations before designing branch-based development.",
+    "requires": "Fabric tenant settings, supported capacity and Git provider",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "fabric",
+    "title": "Promote changes with deployment pipelines",
     "author": "Microsoft",
     "url": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
-    "why": "Review supported items and stage behaviour before designing release automation."
+    "why": "Compare stages and dependencies; a deployment does not prove the data is correct.",
+    "requires": "Fabric deployment permissions and supported items/capacity",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "delivery",
-    "title": "Databricks bundles",
-    "author": "Databricks",
-    "url": "https://docs.databricks.com/aws/en/dev-tools/bundles/",
-    "why": "Keep job configuration and deployment targets under version control."
+    "category": "fabric",
+    "title": "Fabric CI/CD Python library",
+    "author": "Microsoft contributors",
+    "url": "https://github.com/microsoft/fabric-cicd",
+    "why": "Explore code-first publishing, parameters and workspace examples. Check item support before choosing it.",
+    "requires": "Python, Fabric authentication and deployment permissions",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "architecture",
-    "title": "Azure data platform architecture",
-    "author": "Microsoft",
-    "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/",
-    "why": "Compare architecture choices against a defined workload rather than a tool list."
+    "category": "fabric",
+    "title": "Fabric CLI",
+    "author": "Microsoft contributors",
+    "url": "https://github.com/microsoft/fabric-cli",
+    "why": "Start with workspace listing and item inspection before using import or deployment commands.",
+    "requires": "Local Python; Fabric account for remote operations",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "project",
-    "title": "Architecture decision records",
-    "author": "Microsoft",
-    "url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
-    "why": "Capture the decision, alternatives and consequences for the next maintainer."
-  },
-  {
-    "category": "examples",
+    "category": "fabric",
     "title": "Fabric samples",
     "author": "Microsoft contributors",
     "url": "https://github.com/microsoft/fabric-samples",
-    "why": "Find platform examples; inspect each sample's prerequisites and licence."
+    "why": "Find notebooks and scenario samples; read prerequisites for the specific folder you choose.",
+    "requires": "Varies by sample; many need Fabric capacity",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "examples",
+    "category": "fabric",
     "title": "Fabric toolbox",
     "author": "Microsoft contributors",
     "url": "https://github.com/microsoft/fabric-toolbox",
-    "why": "Find operational utilities and review each tool before using it."
+    "why": "Inspect operational scripts for your task. Review each tool and its permissions before use.",
+    "requires": "Varies by utility; usually an authorised Fabric tenant",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
   },
   {
-    "category": "examples",
-    "title": "Original engineering recipes",
+    "category": "fabric",
+    "title": "Semantic Link Labs",
+    "author": "Microsoft contributors",
+    "url": "https://github.com/microsoft/semantic-link-labs",
+    "why": "Explore semantic-model and workspace inspection from Fabric notebooks.",
+    "requires": "Fabric notebook; semantic-link dependencies and permissions",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "fabric",
+    "title": "Choose watermark or change capture in Copy job",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+    "why": "Check whether your load needs deletions and what resetting an append load means for duplicates.",
+    "requires": "Supported source and Fabric Copy job",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "fabric",
+    "title": "Separate workspace, item and data permissions",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/fabric/security/security-overview",
+    "why": "Start an access review by listing the paths a reader can use, including direct data access.",
+    "requires": "Fabric tenant; test with distinct authorised identities",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "adf",
+    "title": "Choose an incremental-copy approach",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
+    "why": "Compare watermark and change-tracking routes before choosing how to recognise changes.",
+    "requires": "Azure Data Factory and supported source; cloud execution",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "adf",
+    "title": "Build a watermark load",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-portal",
+    "why": "Inspect lookup, bounded copy and cursor update steps. Define retry behaviour before advancing the cursor.",
+    "requires": "ADF, Azure SQL and storage in the tutorial",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "adf",
+    "title": "Reach a private source with an integration runtime",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime",
+    "why": "Check network reachability and host requirements before selecting a private-source copy route.",
+    "requires": "ADF and an authorised Windows runtime host; reference only",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "adf",
+    "title": "Automate validation and template export",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements",
+    "why": "Use the utilities package for build validation and export. Deployment is a separate step.",
+    "requires": "Node.js, factory source and Azure configuration",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "adf",
+    "title": "Release an ADF change",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery",
+    "why": "Plan environment parameters and trigger handling when promoting a factory change.",
+    "requires": "Azure deployment access; environment-specific configuration",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "adf",
+    "title": "Measure copy performance",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance",
+    "why": "Use copy metrics to locate a bottleneck before increasing parallelism.",
+    "requires": "An existing ADF copy run and monitoring access",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "spark",
+    "title": "Spark SQL reference",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/sql-ref.html",
+    "why": "Check null, join and expression behaviour against the runtime you actually use.",
+    "requires": "Spark; latest docs can differ from your managed runtime",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "spark",
+    "title": "Explain and tune a Spark query",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html",
+    "why": "Use query plans, statistics and skew evidence to choose a tuning change.",
+    "requires": "Spark workload and measured baseline",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "spark",
+    "title": "Test PySpark transformations",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+    "why": "Write focused DataFrame and schema assertions for small synthetic inputs.",
+    "requires": "Compatible Python, Java and PySpark versions",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "spark",
+    "title": "Structured Streaming semantics",
+    "author": "Apache Spark",
+    "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+    "why": "Check state, watermarks, checkpoints and sink behaviour before claiming replay safety.",
+    "requires": "Spark streaming workload; source/sink-specific guarantees",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "spark",
+    "title": "Delta Lake source and examples",
+    "author": "Delta Lake contributors",
+    "url": "https://github.com/delta-io/delta",
+    "why": "Explore transactions and table examples; check the Spark/Delta compatibility matrix first.",
+    "requires": "Compatible Java, Spark and Delta versions",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "DuckDB Python quickstart",
+    "author": "DuckDB contributors",
+    "url": "https://duckdb.org/docs/current/clients/python/overview.html",
+    "why": "Run SQL against local files in a Python process without a database server.",
+    "requires": "Local Python; DuckDB package",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Query Parquet with DuckDB",
+    "author": "DuckDB contributors",
+    "url": "https://duckdb.org/docs/current/data/parquet/overview.html",
+    "why": "Inspect files and filter columns before loading a full dataset into memory.",
+    "requires": "DuckDB and local Parquet files",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Control CSV parsing",
+    "author": "DuckDB contributors",
+    "url": "https://duckdb.org/docs/current/data/csv/overview.html",
+    "why": "Make types and bad-row behaviour explicit when a CSV contains surprises.",
+    "requires": "DuckDB and local CSV files",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Inspect a DuckDB query plan",
+    "author": "DuckDB contributors",
+    "url": "https://duckdb.org/docs/current/guides/meta/explain.html",
+    "why": "Compare actual query work before making a performance claim.",
+    "requires": "DuckDB and a reproducible query",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Select the Python environment in VS Code",
+    "author": "Microsoft",
+    "url": "https://code.visualstudio.com/docs/python/environments",
+    "why": "Fix interpreter mismatches when a package works in the terminal but not in the editor.",
+    "requires": "VS Code and the Python extension",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Run Jupyter notebooks in VS Code",
+    "author": "Microsoft",
+    "url": "https://code.visualstudio.com/docs/datascience/jupyter-notebooks",
+    "why": "Select the same environment as your terminal so notebook results are reproducible.",
+    "requires": "VS Code, Python/Jupyter extensions and an appropriate kernel",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Manage Python environments with uv",
+    "author": "Astral",
+    "url": "https://docs.astral.sh/uv/guides/projects/",
+    "why": "Explore project dependencies and lockfiles when a small recipe grows into a maintained tool.",
+    "requires": "Local uv installation",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "local",
+    "title": "Scan data lazily with Polars",
+    "author": "Polars contributors",
+    "url": "https://docs.pola.rs/user-guide/lazy/using/",
+    "why": "Use a query plan for local transformations rather than eagerly loading every file.",
+    "requires": "Python and Polars; local files",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "practice",
+    "title": "OpenLineage event model",
+    "author": "OpenLineage contributors",
+    "url": "https://openlineage.io/docs/spec/object-model/",
+    "why": "Understand job, run and dataset metadata before choosing what evidence your pipeline should emit.",
+    "requires": "Reference only; an event consumer is a separate dependency",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "practice",
+    "title": "dbt data tests",
+    "author": "dbt Labs",
+    "url": "https://docs.getdbt.com/docs/build/data-tests",
+    "why": "Use assertions to describe invalid rows and business-key failures. Match the adapter to your engine.",
+    "requires": "dbt and a supported adapter; platform costs vary",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "practice",
+    "title": "Write an architecture decision record",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "why": "Capture a concrete choice, rejected alternatives and consequences for the next maintainer.",
+    "requires": "No runtime needed",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "practice",
+    "title": "Choose a database for the workload",
+    "author": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/databases/database-get-started",
+    "why": "Compare storage requirements and database choices before drawing a service diagram.",
+    "requires": "Reference only; architectures can include paid services",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "practice",
+    "title": "Original runnable engineering recipes",
     "author": "Pipeline Practice",
     "url": "https://github.com/ingestron-io/data-engineering-recipes",
-    "why": "Run small synthetic examples for replay, joins, quarantine and release review."
+    "why": "Try synthetic retries, late updates, joins and rejected rows locally, then review platform differences.",
+    "requires": "Python and DuckDB; optional Java/PySpark",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "category": "databricks",
+    "title": "Validate a bundle before deployment",
+    "author": "Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/work-tasks",
+    "why": "Separate configuration validation from deployment and workload tests; choose the target explicitly.",
+    "requires": "Databricks CLI, a bundle project and authorised workspace",
+    "kind": "guide",
+    "reviewedAt": "2026-10-05"
   }
 ]

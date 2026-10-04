@@ -1,54 +1,38 @@
 # Awesome data engineering practice
 
-Useful references for a specific job, with one sentence explaining why to open
-each one. Start with your problem, then choose a resource. This is a selective
-list; linked projects are not endorsements or claims that we ran them.
+Useful references for the problems you meet while building and running data pipelines.
+Choose a task, run a small example, then check the platform-specific behaviour.
 
-## Retries And Incremental Loading
+## Start with a problem
 
-- [Incremental copy with ADF](https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview) — Microsoft. Compare watermark and change-tracking routes before choosing a cursor.
-- [Delta MERGE](https://docs.databricks.com/aws/en/delta/merge) — Databricks. Read duplicate-match and runtime rules before designing an upsert.
-- [Structured Streaming programming guide](https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html) — Apache Spark. Understand state, checkpoints and delivery semantics before claiming safe replay.
+| You need to… | Start here |
+| --- | --- |
+| Retry a load without duplicate totals | [Safe incremental loads](guides/safe-incremental-loads.md) |
+| Review a notebook or pipeline release | [Review a data release](guides/review-a-data-release.md) |
+| Check who can see sensitive values | [Test reader access](guides/test-reader-access.md) |
+| Turn a request into a checkable delivery | [Scope a data project](guides/scope-a-data-project.md) |
+| Run SQL and file checks in VS Code | [Local development](resources/local.md) |
 
-## Spark
+## Browse by platform
 
-- [SQL reference](https://spark.apache.org/docs/latest/sql-ref.html) — Apache Spark. Check null, join and expression behaviour against the engine reference.
-- [Performance tuning](https://spark.apache.org/docs/latest/sql-performance-tuning.html) — Apache Spark. Use plans and runtime evidence to choose a tuning change.
+| Platform or practice | Resources |
+| --- | --- |
+| [Databricks](resources/databricks.md) | 11 |
+| [Microsoft Fabric](resources/fabric.md) | 12 |
+| [Azure Data Factory](resources/adf.md) | 6 |
+| [Spark and Delta](resources/spark.md) | 5 |
+| [Local Python, DuckDB and VS Code](resources/local.md) | 8 |
+| [Quality, governance and project work](resources/practice.md) | 5 |
 
-## Quality
+47 attributed resources. Cloud references can require paid capacity or compute; the local recipes run on your computer.
 
-- [Lakeflow expectations](https://docs.databricks.com/aws/en/ldp/expectations) — Databricks. Compare warning, drop and failure behaviour for quality rules.
+## How this list stays useful
 
-## Governance
+Each entry explains when it helps, who maintains it and what it needs.
+These are original selection notes, not copied articles or endorsements.
+GitHub projects are checked for repository status and licence metadata.
+An accessible link does not prove its sample has been executed.
 
-- [Row filters and column masks](https://docs.databricks.com/aws/en/data-governance/unity-catalog/filters-and-masks/) — Databricks. Check privileges and limitations; test with the actual reader identity.
-- [Fabric security overview](https://learn.microsoft.com/en-us/fabric/security/security-overview) — Microsoft. Separate workspace, item and data permissions before granting access.
-- [Unity Catalog access control](https://docs.databricks.com/aws/en/data-governance/unity-catalog/manage-privileges/) — Databricks. Understand ownership and grants instead of assuming workspace membership is sufficient.
+[Review evidence](docs/verification.md) · [Suggest a resource](CONTRIBUTING.md) · [Report a security issue](SECURITY.md)
 
-## Delivery
-
-- [ADF CI/CD](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery) — Microsoft. Plan Git authoring, environment configuration and release steps.
-- [Fabric deployment pipelines](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines) — Microsoft. Review supported items and stage behaviour before designing release automation.
-- [Databricks bundles](https://docs.databricks.com/aws/en/dev-tools/bundles/) — Databricks. Keep job configuration and deployment targets under version control.
-
-## Architecture
-
-- [Azure data platform architecture](https://learn.microsoft.com/en-us/azure/architecture/data-guide/) — Microsoft. Compare architecture choices against a defined workload rather than a tool list.
-
-## Project
-
-- [Architecture decision records](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record) — Microsoft. Capture the decision, alternatives and consequences for the next maintainer.
-
-## Examples
-
-- [Fabric samples](https://github.com/microsoft/fabric-samples) — Microsoft contributors. Find platform examples; inspect each sample's prerequisites and licence.
-- [Fabric toolbox](https://github.com/microsoft/fabric-toolbox) — Microsoft contributors. Find operational utilities and review each tool before using it.
-- [Original engineering recipes](https://github.com/ingestron-io/data-engineering-recipes) — Pipeline Practice. Run small synthetic examples for replay, joins, quarantine and release review.
-
-
-## Suggest a resource
-
-Explain the task it solves, credit its author and use the canonical link.
-Prefer official references and inspect prerequisites, cost and licence. Remove
-links that stop being useful. The original list is CC0; linked works keep their
-own licences. [Contribution guide](CONTRIBUTING.md).
+The original list is CC0. Linked articles and code retain their authors’ licences and service terms.
