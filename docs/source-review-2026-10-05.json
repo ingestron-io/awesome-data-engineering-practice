@@ -1,0 +1,399 @@
+[
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/databricks/delta/merge",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/databricks/ldp/expectations",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/filters-and-masks/",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/manage-privileges/",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/databricks/bundle-examples",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/databricks/bundle-examples",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "NOASSERTION",
+    "pushedAt": "2026-10-01T09:55:55Z",
+    "readmeBlob": "de605c545cbf46a953f371ea67efe2595423760f",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer",
+    "licenceNote": "Databricks licence; inspect upstream LICENSE and service terms before reuse",
+    "licenceUrl": "https://github.com/databricks/bundle-examples/blob/main/LICENSE"
+  },
+  {
+    "url": "https://github.com/databricks/cli",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/databricks/cli",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "NOASSERTION",
+    "pushedAt": "2026-10-04T19:05:11Z",
+    "readmeBlob": "46b9556a7daf3179b22f4f5cc89ae35b333e7e62",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer",
+    "licenceNote": "Databricks licence; inspect upstream LICENSE and service terms before reuse",
+    "licenceUrl": "https://github.com/databricks/cli/blob/main/LICENSE"
+  },
+  {
+    "url": "https://github.com/databricks/databricks-sdk-py",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/databricks/databricks-sdk-py",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "Apache-2.0",
+    "pushedAt": "2026-10-04T03:41:00Z",
+    "readmeBlob": "ed5a421b7deeb65034b9cf3b516ffc2e0bcec5e5",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/databrickslabs/dqx",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/databrickslabs/dqx",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "NOASSERTION",
+    "pushedAt": "2026-10-02T17:03:09Z",
+    "readmeBlob": "9f3c9abe9b89c26c0aed172c6d34362f3e336503",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer",
+    "licenceNote": "Databricks licence; inspect upstream LICENSE and service terms before reuse",
+    "licenceUrl": "https://github.com/databrickslabs/dqx/blob/main/LICENSE"
+  },
+  {
+    "url": "https://github.com/databrickslabs/ucx",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/databrickslabs/ucx",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "NOASSERTION",
+    "pushedAt": "2026-06-12T13:19:03Z",
+    "readmeBlob": "eb1df26f4a7af2a8c07cfd6ca25b443a6f5bddf2",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer",
+    "licenceNote": "Databricks licence; inspect upstream LICENSE and service terms before reuse",
+    "licenceUrl": "https://github.com/databrickslabs/ucx/blob/main/LICENSE"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-introduction",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/data-engineering/tutorial-lakehouse-introduction",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-notebook-load-data",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-notebook-load-data",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/data-engineering/notebook-source-control-deployment",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/data-engineering/notebook-source-control-deployment",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/microsoft/fabric-cicd",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/microsoft/fabric-cicd",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "MIT",
+    "pushedAt": "2026-10-04T14:09:09Z",
+    "readmeBlob": "ccd4d37c46eb58da0832b113e5ca47b1d1cd0464",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/microsoft/fabric-cli",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/microsoft/fabric-cli",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "MIT",
+    "pushedAt": "2026-10-04T07:31:17Z",
+    "readmeBlob": "d40cf08896178beaf9256162d75ceaa6aa320f7d",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/microsoft/fabric-samples",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/microsoft/fabric-samples",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "MIT",
+    "pushedAt": "2026-09-29T06:06:39Z",
+    "readmeBlob": "3e666efb6d65db17e6eb13df946f75e9806f3dcd",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/microsoft/fabric-toolbox",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/microsoft/fabric-toolbox",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "MIT",
+    "pushedAt": "2026-10-02T18:03:22Z",
+    "readmeBlob": "0184f7b1ddb6453503dcc7c8ee89cc4f72928326",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/microsoft/semantic-link-labs",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/microsoft/semantic-link-labs",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "MIT",
+    "pushedAt": "2026-10-04T05:56:08Z",
+    "readmeBlob": "2080a3b59cd7bdc510077085e65e0aa13b082ffe",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/data-factory/incremental-copy-job",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/fabric/security/security-overview",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/fabric/security/security-overview",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-overview",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-portal",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-portal",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery-improvements",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-performance",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://spark.apache.org/docs/latest/sql-ref.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://spark.apache.org/docs/latest/sql-ref.html",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://spark.apache.org/docs/latest/sql-performance-tuning.html",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/delta-io/delta",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/delta-io/delta",
+    "defaultBranch": "master",
+    "archived": false,
+    "licence": "Apache-2.0",
+    "pushedAt": "2026-10-03T04:42:05Z",
+    "readmeBlob": "5a3c8ceaa500e9c1fd5b205660257915e454cf06",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://duckdb.org/docs/current/clients/python/overview.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://duckdb.org/docs/current/clients/python/overview",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://duckdb.org/docs/current/data/parquet/overview.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://duckdb.org/docs/current/data/parquet/overview",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://duckdb.org/docs/current/data/csv/overview.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://duckdb.org/docs/current/data/csv/overview",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://duckdb.org/docs/current/guides/meta/explain.html",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://duckdb.org/docs/current/guides/meta/explain",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://code.visualstudio.com/docs/python/environments",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://code.visualstudio.com/docs/python/environments",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://code.visualstudio.com/docs/datascience/jupyter-notebooks",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://code.visualstudio.com/docs/datascience/jupyter-notebooks",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://docs.astral.sh/uv/guides/projects/",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://docs.astral.sh/uv/guides/projects/",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://docs.pola.rs/user-guide/lazy/using/",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://docs.pola.rs/user-guide/lazy/using/",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://openlineage.io/docs/spec/object-model/",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://openlineage.io/docs/spec/object-model/",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://docs.getdbt.com/docs/build/data-tests",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://docs.getdbt.com/docs/build/data-tests",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/databases/database-get-started",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/databases/database-get-started",
+    "review": "HTTP GET and page text fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://github.com/ingestron-io/data-engineering-recipes",
+    "checkedAt": "2026-10-05",
+    "status": 200,
+    "finalUrl": "https://github.com/ingestron-io/data-engineering-recipes",
+    "defaultBranch": "main",
+    "archived": false,
+    "licence": "MIT",
+    "pushedAt": "2026-10-04T22:55:18Z",
+    "readmeBlob": "c0957a8f78a5de3833fb5afd39e325706334b610",
+    "review": "README and repository metadata fetched; selection note reviewed by maintainer"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/work-tasks",
+    "status": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/databricks/dev-tools/bundles/work-tasks",
+    "checkedAt": "2026-10-05",
+    "review": "Official workflow text reviewed with web source; HTTP GET verified"
+  }
+]
