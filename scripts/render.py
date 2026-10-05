@@ -68,6 +68,61 @@ CATEGORIES = {
     ),
 }
 
+SOURCES = {
+    "project": "Community project",
+    "practitioner": "Practitioner article",
+    "consultancy": "Consultancy article",
+    "vendor": "Platform or tool publisher",
+    "original": "Original recipe",
+}
+GROUPS = (
+    ("Practitioner articles", {"practitioner", "consultancy"}),
+    ("Community projects and project guides", {"project"}),
+    ("Platform and tool references", {"vendor"}),
+    ("Original recipes", {"original"}),
+)
+
+
+def load_evidence():
+    records = []
+    for path in sorted((ROOT / "docs").glob("*-review-*.json")):
+        records.extend(json.loads(path.read_text()))
+    urls = [record["url"] for record in records]
+    if len(urls) != len(set(urls)):
+        raise ValueError("Duplicate source-review URL; keep one current record per URL")
+    return {record["url"]: record for record in records}
+
+
+def entry_lines(item, evidence):
+    lines = [
+        f"### [{item['title']}]({item['url']})",
+        "",
+        item["why"],
+        "",
+        f"**By:** {item['author']} · **Source:** {SOURCES[item['sourceType']]}",
+        "",
+        f"- **Needs:** {item['requires']}.",
+    ]
+    if item.get("caution"):
+        lines += [f"- **Before using it:** {item['caution']}"]
+    record = evidence[item["url"]]
+    if item["kind"] == "repository":
+        licence = record.get("licenceNote") or record.get("licence")
+        terms = (
+            f" [Read the upstream terms]({record['licenceUrl']})."
+            if record.get("licenceUrl")
+            else " Linked code keeps its own terms."
+        )
+        lines += [f"- **Upstream licence:** {licence.rstrip('.')}.{terms}"]
+    if item["kind"] == "article":
+        lines += [
+            f"- **Published:** {item.get('publishedAt', 'Date not shown on the article')}. **Reviewed:** {item['reviewedAt']}."
+        ]
+    else:
+        lines += [f"- **Reviewed:** {item['reviewedAt']}."]
+    lines += [""]
+    return lines
+
 
 def render(items, evidence):
     documents = {}
@@ -86,6 +141,12 @@ def render(items, evidence):
         "| Check who can see sensitive values | [Test reader access](guides/test-reader-access.md) |",
         "| Turn a request into a checkable delivery | [Scope a data project](guides/scope-a-data-project.md) |",
         "| Run SQL and file checks in VS Code | [Local development](resources/local.md) |",
+        "",
+        "## Learn from the community",
+        "",
+        "[Browse community projects and field notes](community.md) for worked examples, debugging stories and engineering trade-offs.",
+        "Start with Spark assertion failures, ADF testing, Fabric releases or shared Databricks development.",
+        "Author experience, consultancy advice and project documentation are labelled on every entry.",
         "",
         "## Browse by platform",
         "",
@@ -110,30 +171,25 @@ def render(items, evidence):
             "",
             "Try the [original local recipes](https://github.com/ingestron-io/data-engineering-recipes) before adapting them to a workspace.",
             "",
-            "## Selected references",
+        ]
+        available = [
+            (title, sources)
+            for title, sources in GROUPS
+            if any(item["sourceType"] in sources for item in group)
+        ]
+        lines += [
+            "Jump to: "
+            + " · ".join(
+                f"[{title}](#{title.lower().replace(' ', '-')})"
+                for title, _ in available
+            ),
             "",
         ]
-        for item in group:
-            lines += [
-                f"### [{item['title']}]({item['url']})",
-                "",
-                item["why"],
-                "",
-                f"**By:** {item['author']}. **Type:** {item['kind']}. **Needs:** {item['requires']}.",
-            ]
-            record = evidence.get(item["url"], {})
-            if item["kind"] == "repository":
-                licence = (
-                    record.get("licenceNote")
-                    or record.get("licence")
-                    or "Check upstream terms"
-                )
-                lines += [
-                    f"**Upstream licence:** {licence}. Linked code keeps its own terms."
-                ]
-            if record.get("licenceUrl"):
-                lines += [f"[Read the upstream licence]({record['licenceUrl']})."]
-            lines += [f"**Reviewed:** {item['reviewedAt']}.", ""]
+        for heading, sources in available:
+            lines += [f"## {heading}", ""]
+            for item in group:
+                if item["sourceType"] in sources:
+                    lines += entry_lines(item, evidence)
         documents[f"resources/{key}.md"] = "\n".join(lines).rstrip() + "\n"
     index += [
         "",
@@ -143,6 +199,8 @@ def render(items, evidence):
         "",
         "Each entry explains when it helps, who maintains it and what it needs.",
         "These are original selection notes, not copied articles or endorsements.",
+        "Community sources include practitioner sites, consultancy blogs and project-maintained references; projects can have commercial backing.",
+        "Dated experience is useful context. Check current platform documentation before treating it as present-day behaviour.",
         "GitHub projects are checked for repository status and licence metadata.",
         "An accessible link does not prove its sample has been executed.",
         "",
@@ -152,6 +210,41 @@ def render(items, evidence):
         "",
     ]
     documents["README.md"] = "\n".join(index)
+    community = [
+        "# Community projects and field notes",
+        "",
+        "[Library home](README.md)",
+        "",
+        "Learn from people who explain a failure, show their code or describe a trade-off.",
+        "This page brings together practitioner articles, consultancy walkthroughs and community projects.",
+        "Some projects have commercial backing. Source labels describe who publishes the material, not financial independence.",
+        "",
+        "Each platform page includes prerequisites, publication/review dates and reuse notes.",
+        "Article experience is attributed to its author; upstream samples have not been run by this library.",
+        "",
+    ]
+    for key, (title, _, _) in CATEGORIES.items():
+        selected = [
+            item
+            for item in items
+            if item["category"] == key
+            and item["sourceType"] in {"project", "practitioner", "consultancy"}
+        ]
+        if not selected:
+            continue
+        community += [
+            f"## {title}",
+            "",
+            f"[Read the prerequisites and review notes](resources/{key}.md).",
+            "",
+        ]
+        for item in selected:
+            community += [
+                f"- [{item['title']}]({item['url']}) — {item['why']} By {item['author']}."
+            ]
+        community += [""]
+    community += ["[Suggest another worked example](CONTRIBUTING.md).", ""]
+    documents["community.md"] = "\n".join(community)
     return documents
 
 
@@ -162,12 +255,7 @@ def main():
     )
     args = parser.parse_args()
     items = json.loads((ROOT / "resources.json").read_text())
-    evidence = {
-        record["url"]: record
-        for record in json.loads(
-            (ROOT / "docs/source-review-2026-10-05.json").read_text()
-        )
-    }
+    evidence = load_evidence()
     for path, text in render(items, evidence).items():
         target = ROOT / path
         if args.check:
