@@ -21,11 +21,11 @@ Jump to: [Practitioner articles](#practitioner-articles) · [Community projects 
 
 Start with disagreeing report totals. Consider named metric owners and a feedback loop for finding stale assumptions.
 
-**By:** Michael Kaminsky · Locally Optimistic. **Source:** Practitioner article. **Type:** article.
-**Needs:** Discussion with business owners and data consumers; no new tool required.
-**Before using it:** An organisational opinion. Its broad collection/sharing advice is not a privacy or retention policy.
-**Published:** 2018-04-15.
-**Reviewed:** 2026-10-05.
+**By:** Michael Kaminsky · Locally Optimistic · **Source:** Practitioner article
+
+- **Needs:** Discussion with business owners and data consumers; no new tool required.
+- **Before using it:** An organisational opinion. Its broad collection/sharing advice is not a privacy or retention policy.
+- **Published:** 2018-04-15. **Reviewed:** 2026-10-05.
 
 ## Community projects and project guides
 
@@ -33,19 +33,21 @@ Start with disagreeing report totals. Consider named metric owners and a feedbac
 
 Understand job, run and dataset metadata before choosing what evidence your pipeline should emit.
 
-**By:** OpenLineage contributors. **Source:** Community project. **Type:** guide.
-**Needs:** Reference only; an event consumer is a separate dependency.
-**Reviewed:** 2026-10-05.
+**By:** OpenLineage contributors · **Source:** Community project
+
+- **Needs:** Reference only; an event consumer is a separate dependency.
+- **Reviewed:** 2026-10-05.
 
 ### [Open Data Contract Standard](https://github.com/bitol-io/open-data-contract-standard)
 
 Write down what a table means, who owns it and how fresh it should be. Review the agreement in Git.
 
-**By:** Bitol contributors. **Source:** Community project. **Type:** repository.
-**Needs:** YAML examples; JSON Schema-aware editor such as VS Code.
-**Before using it:** An agreed file describes expectations; separate implementation and access tests must enforce them.
-**Upstream licence:** Apache-2.0. Linked code keeps its own terms.
-**Reviewed:** 2026-10-05.
+**By:** Bitol contributors · **Source:** Community project
+
+- **Needs:** YAML examples; JSON Schema-aware editor such as VS Code.
+- **Before using it:** An agreed file describes expectations; separate implementation and access tests must enforce them.
+- **Upstream licence:** Apache-2.0. Linked code keeps its own terms.
+- **Reviewed:** 2026-10-05.
 
 ## Platform and tool references
 
@@ -53,25 +55,28 @@ Write down what a table means, who owns it and how fresh it should be. Review th
 
 Use assertions to describe invalid rows and business-key failures. Match the adapter to your engine.
 
-**By:** dbt Labs. **Source:** Platform or tool publisher. **Type:** guide.
-**Needs:** dbt and a supported adapter; platform costs vary.
-**Reviewed:** 2026-10-05.
+**By:** dbt Labs · **Source:** Platform or tool publisher
+
+- **Needs:** dbt and a supported adapter; platform costs vary.
+- **Reviewed:** 2026-10-05.
 
 ### [Write an architecture decision record](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record)
 
 Capture a concrete choice, rejected alternatives and consequences for the next maintainer.
 
-**By:** Microsoft. **Source:** Platform or tool publisher. **Type:** guide.
-**Needs:** No runtime needed.
-**Reviewed:** 2026-10-05.
+**By:** Microsoft · **Source:** Platform or tool publisher
+
+- **Needs:** No runtime needed.
+- **Reviewed:** 2026-10-05.
 
 ### [Choose a database for the workload](https://learn.microsoft.com/en-us/azure/architecture/databases/database-get-started)
 
 Compare storage requirements and database choices before drawing a service diagram.
 
-**By:** Microsoft. **Source:** Platform or tool publisher. **Type:** guide.
-**Needs:** Reference only; architectures can include paid services.
-**Reviewed:** 2026-10-05.
+**By:** Microsoft · **Source:** Platform or tool publisher
+
+- **Needs:** Reference only; architectures can include paid services.
+- **Reviewed:** 2026-10-05.
 
 ## Original recipes
 
@@ -79,7 +84,8 @@ Compare storage requirements and database choices before drawing a service diagr
 
 Try synthetic retries, late updates, joins and rejected rows locally, then review platform differences.
 
-**By:** Pipeline Practice. **Source:** Original recipe. **Type:** repository.
-**Needs:** Python and DuckDB; optional Java/PySpark.
-**Upstream licence:** MIT. Linked code keeps its own terms.
-**Reviewed:** 2026-10-05.
+**By:** Pipeline Practice · **Source:** Original recipe
+
+- **Needs:** Python and DuckDB; optional Java/PySpark.
+- **Upstream licence:** MIT. Linked code keeps its own terms.
+- **Reviewed:** 2026-10-05.

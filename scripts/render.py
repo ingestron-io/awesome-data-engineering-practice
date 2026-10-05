@@ -99,24 +99,28 @@ def entry_lines(item, evidence):
         "",
         item["why"],
         "",
-        f"**By:** {item['author']}. **Source:** {SOURCES[item['sourceType']]}. **Type:** {item['kind']}.",
-        f"**Needs:** {item['requires']}.",
+        f"**By:** {item['author']} · **Source:** {SOURCES[item['sourceType']]}",
+        "",
+        f"- **Needs:** {item['requires']}.",
     ]
     if item.get("caution"):
-        lines += [f"**Before using it:** {item['caution']}"]
+        lines += [f"- **Before using it:** {item['caution']}"]
     record = evidence[item["url"]]
     if item["kind"] == "repository":
         licence = record.get("licenceNote") or record.get("licence")
-        lines += [
-            f"**Upstream licence:** {licence.rstrip('.')}. Linked code keeps its own terms."
-        ]
-    if record.get("licenceUrl"):
-        lines += [f"[Read the upstream terms]({record['licenceUrl']})."]
+        terms = (
+            f" [Read the upstream terms]({record['licenceUrl']})."
+            if record.get("licenceUrl")
+            else " Linked code keeps its own terms."
+        )
+        lines += [f"- **Upstream licence:** {licence.rstrip('.')}.{terms}"]
     if item["kind"] == "article":
         lines += [
-            f"**Published:** {item.get('publishedAt', 'Date not shown on the article')}."
+            f"- **Published:** {item.get('publishedAt', 'Date not shown on the article')}. **Reviewed:** {item['reviewedAt']}."
         ]
-    lines += [f"**Reviewed:** {item['reviewedAt']}.", ""]
+    else:
+        lines += [f"- **Reviewed:** {item['reviewedAt']}."]
+    lines += [""]
     return lines
 
 
