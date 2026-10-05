@@ -8,16 +8,15 @@ import subprocess
 import sys
 from urllib.parse import unquote, urlparse
 
+from render import load_evidence, SOURCES
+
 ROOT = Path(__file__).resolve().parents[1]
 items = json.loads((ROOT / "resources.json").read_text())
-evidence = {
-    record["url"]: record
-    for record in json.loads((ROOT / "docs/source-review-2026-10-05.json").read_text())
-}
+evidence = load_evidence()
 assert len(items) >= 12
 seen = set()
 for item in items:
-    assert set(item) == {
+    required = {
         "category",
         "title",
         "author",
@@ -26,7 +25,9 @@ for item in items:
         "requires",
         "kind",
         "reviewedAt",
+        "sourceType",
     }
+    assert required <= set(item) <= required | {"caution", "publishedAt"}
     assert all(isinstance(value, str) and value.strip() for value in item.values())
     date.fromisoformat(item["reviewedAt"])
     assert item["category"] in (
@@ -37,7 +38,16 @@ for item in items:
         "local",
         "practice",
     )
-    assert item["kind"] in ("guide", "repository")
+    assert item["kind"] in ("guide", "repository", "article")
+    assert item["sourceType"] in SOURCES
+    if item["kind"] == "article":
+        assert item["sourceType"] in ("practitioner", "consultancy")
+        assert item.get("caution"), "Articles need an experience/version boundary"
+    if item.get("publishedAt"):
+        assert item["kind"] == "article"
+        assert date.fromisoformat(item["publishedAt"]) <= date.fromisoformat(
+            item["reviewedAt"]
+        )
     url = urlparse(item["url"])
     assert (
         url.scheme == "https" and url.hostname and not url.username and not url.password
@@ -51,6 +61,11 @@ for item in items:
     record = evidence[item["url"]]
     assert record["status"] == 200 and "error" not in record, item["url"]
     assert record["checkedAt"] == item["reviewedAt"]
+    if item["sourceType"] in ("project", "practitioner", "consultancy"):
+        assert f"]({item['url']})" in (ROOT / "community.md").read_text()
+    if item["kind"] == "article":
+        assert record.get("publishedAt") == item.get("publishedAt")
+        assert record["sourceType"] == item["sourceType"]
     if item["kind"] == "repository":
         assert record["archived"] is False
         assert re.fullmatch("[a-f0-9]{40}", record["readmeBlob"])

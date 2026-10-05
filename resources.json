@@ -7,7 +7,8 @@
     "why": "Use when a replay or multiple source rows can update the same business key. Compare runtime-specific matching rules.",
     "requires": "Databricks and Delta tables",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -17,7 +18,8 @@
     "why": "Compare retain, drop and stop behaviour before deciding what happens to a bad row.",
     "requires": "Lakeflow pipeline and supported runtime",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -27,7 +29,8 @@
     "why": "Use for reader-specific access. Check compute limitations and test an actual reader identity.",
     "requires": "Unity Catalog, supported compute and policy permissions",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -37,7 +40,8 @@
     "why": "Trace ownership and grants when a user can open a workspace but cannot query a table.",
     "requires": "Unity Catalog and authorised identities",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -47,7 +51,8 @@
     "why": "Keep job definitions, code and environment targets together. Older material calls these Asset Bundles.",
     "requires": "Databricks CLI; authenticated workspace for validation/deployment",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -57,7 +62,8 @@
     "why": "Start from a relevant job example and inspect its resources before deployment.",
     "requires": "Databricks workspace; individual examples can provision services",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -67,7 +73,8 @@
     "why": "Use local commands to inspect workspace resources and work with bundles.",
     "requires": "Local binary; workspace authentication for remote commands",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -77,7 +84,8 @@
     "why": "Inspect API examples for repeatable inventory and job automation instead of browser clicking.",
     "requires": "Python; workspace authentication and API permissions",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -87,7 +95,8 @@
     "why": "Explore rule definitions and good/bad row splits. Labs publishes this without a support SLA.",
     "requires": "PySpark; check each example runtime and optional cloud dependencies",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "databricks",
@@ -97,7 +106,8 @@
     "why": "Inspect assessment reports before planning a legacy metastore migration. Review permissions before running.",
     "requires": "Authorised Databricks workspace; Labs support limitations",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -107,7 +117,8 @@
     "why": "Follow the end-to-end data flow, then inspect where incremental updates enter it.",
     "requires": "Fabric workspace and capacity; cloud tutorial",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -117,7 +128,8 @@
     "why": "Check Files versus Tables and relative versus ABFS paths before moving a notebook.",
     "requires": "Fabric notebook and lakehouse",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -127,7 +139,8 @@
     "why": "Check notebook source and target lakehouse/environment bindings during a release.",
     "requires": "Fabric workspace, Git integration and item ownership",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -137,7 +150,8 @@
     "why": "Check supported items and provider limitations before designing branch-based development.",
     "requires": "Fabric tenant settings, supported capacity and Git provider",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -147,7 +161,8 @@
     "why": "Compare stages and dependencies; a deployment does not prove the data is correct.",
     "requires": "Fabric deployment permissions and supported items/capacity",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -157,7 +172,8 @@
     "why": "Explore code-first publishing, parameters and workspace examples. Check item support before choosing it.",
     "requires": "Python, Fabric authentication and deployment permissions",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -167,7 +183,8 @@
     "why": "Start with workspace listing and item inspection before using import or deployment commands.",
     "requires": "Local Python; Fabric account for remote operations",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -177,7 +194,8 @@
     "why": "Find notebooks and scenario samples; read prerequisites for the specific folder you choose.",
     "requires": "Varies by sample; many need Fabric capacity",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -187,7 +205,8 @@
     "why": "Inspect operational scripts for your task. Review each tool and its permissions before use.",
     "requires": "Varies by utility; usually an authorised Fabric tenant",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -197,7 +216,8 @@
     "why": "Explore semantic-model and workspace inspection from Fabric notebooks.",
     "requires": "Fabric notebook; semantic-link dependencies and permissions",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -207,7 +227,8 @@
     "why": "Check whether your load needs deletions and what resetting an append load means for duplicates.",
     "requires": "Supported source and Fabric Copy job",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "fabric",
@@ -217,7 +238,8 @@
     "why": "Start an access review by listing the paths a reader can use, including direct data access.",
     "requires": "Fabric tenant; test with distinct authorised identities",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "adf",
@@ -227,7 +249,8 @@
     "why": "Compare watermark and change-tracking routes before choosing how to recognise changes.",
     "requires": "Azure Data Factory and supported source; cloud execution",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "adf",
@@ -237,7 +260,8 @@
     "why": "Inspect lookup, bounded copy and cursor update steps. Define retry behaviour before advancing the cursor.",
     "requires": "ADF, Azure SQL and storage in the tutorial",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "adf",
@@ -247,7 +271,8 @@
     "why": "Check network reachability and host requirements before selecting a private-source copy route.",
     "requires": "ADF and an authorised Windows runtime host; reference only",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "adf",
@@ -257,7 +282,8 @@
     "why": "Use the utilities package for build validation and export. Deployment is a separate step.",
     "requires": "Node.js, factory source and Azure configuration",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "adf",
@@ -267,7 +293,8 @@
     "why": "Plan environment parameters and trigger handling when promoting a factory change.",
     "requires": "Azure deployment access; environment-specific configuration",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "adf",
@@ -277,7 +304,8 @@
     "why": "Use copy metrics to locate a bottleneck before increasing parallelism.",
     "requires": "An existing ADF copy run and monitoring access",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "spark",
@@ -287,7 +315,8 @@
     "why": "Check null, join and expression behaviour against the runtime you actually use.",
     "requires": "Spark; latest docs can differ from your managed runtime",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "spark",
@@ -297,7 +326,8 @@
     "why": "Use query plans, statistics and skew evidence to choose a tuning change.",
     "requires": "Spark workload and measured baseline",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "spark",
@@ -307,7 +337,8 @@
     "why": "Write focused DataFrame and schema assertions for small synthetic inputs.",
     "requires": "Compatible Python, Java and PySpark versions",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "spark",
@@ -317,7 +348,8 @@
     "why": "Check state, watermarks, checkpoints and sink behaviour before claiming replay safety.",
     "requires": "Spark streaming workload; source/sink-specific guarantees",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "spark",
@@ -327,7 +359,8 @@
     "why": "Explore transactions and table examples; check the Spark/Delta compatibility matrix first.",
     "requires": "Compatible Java, Spark and Delta versions",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "local",
@@ -337,7 +370,8 @@
     "why": "Run SQL against local files in a Python process without a database server.",
     "requires": "Local Python; DuckDB package",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "local",
@@ -347,7 +381,8 @@
     "why": "Inspect files and filter columns before loading a full dataset into memory.",
     "requires": "DuckDB and local Parquet files",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "local",
@@ -357,7 +392,8 @@
     "why": "Make types and bad-row behaviour explicit when a CSV contains surprises.",
     "requires": "DuckDB and local CSV files",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "local",
@@ -367,7 +403,8 @@
     "why": "Compare actual query work before making a performance claim.",
     "requires": "DuckDB and a reproducible query",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "local",
@@ -377,7 +414,8 @@
     "why": "Fix interpreter mismatches when a package works in the terminal but not in the editor.",
     "requires": "VS Code and the Python extension",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "local",
@@ -387,7 +425,8 @@
     "why": "Select the same environment as your terminal so notebook results are reproducible.",
     "requires": "VS Code, Python/Jupyter extensions and an appropriate kernel",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "local",
@@ -397,7 +436,8 @@
     "why": "Explore project dependencies and lockfiles when a small recipe grows into a maintained tool.",
     "requires": "Local uv installation",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "local",
@@ -407,7 +447,8 @@
     "why": "Use a query plan for local transformations rather than eagerly loading every file.",
     "requires": "Python and Polars; local files",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "practice",
@@ -417,7 +458,8 @@
     "why": "Understand job, run and dataset metadata before choosing what evidence your pipeline should emit.",
     "requires": "Reference only; an event consumer is a separate dependency",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project"
   },
   {
     "category": "practice",
@@ -427,7 +469,8 @@
     "why": "Use assertions to describe invalid rows and business-key failures. Match the adapter to your engine.",
     "requires": "dbt and a supported adapter; platform costs vary",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "practice",
@@ -437,7 +480,8 @@
     "why": "Capture a concrete choice, rejected alternatives and consequences for the next maintainer.",
     "requires": "No runtime needed",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "practice",
@@ -447,7 +491,8 @@
     "why": "Compare storage requirements and database choices before drawing a service diagram.",
     "requires": "Reference only; architectures can include paid services",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
   },
   {
     "category": "practice",
@@ -457,7 +502,8 @@
     "why": "Try synthetic retries, late updates, joins and rejected rows locally, then review platform differences.",
     "requires": "Python and DuckDB; optional Java/PySpark",
     "kind": "repository",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "original"
   },
   {
     "category": "databricks",
@@ -467,6 +513,242 @@
     "why": "Separate configuration validation from deployment and workload tests; choose the target explicitly.",
     "requires": "Databricks CLI, a bundle project and authorised workspace",
     "kind": "guide",
-    "reviewedAt": "2026-10-05"
+    "reviewedAt": "2026-10-05",
+    "sourceType": "vendor"
+  },
+  {
+    "category": "spark",
+    "title": "chispa",
+    "author": "Matthew Powers and chispa contributors",
+    "url": "https://github.com/MrPowers/chispa",
+    "why": "See which rows differ when a Spark transformation test fails. Compare values, schemas and floating-point tolerances.",
+    "requires": "Python, compatible PySpark and Java; local execution is possible",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Choose row-order, nullability and tolerance options deliberately; relaxed assertions can hide errors."
+  },
+  {
+    "category": "local",
+    "title": "SQLFluff",
+    "author": "SQLFluff contributors",
+    "url": "https://github.com/sqlfluff/sqlfluff",
+    "why": "Catch inconsistent SQL before review. Select a dialect and check templated SQL in CI or your editor.",
+    "requires": "Python CLI and a dialect configuration; no database service",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Linting checks syntax and style; it does not prove the query returns correct business results."
+  },
+  {
+    "category": "local",
+    "title": "SQLGlot",
+    "author": "SQLGlot contributors",
+    "url": "https://github.com/tobymao/sqlglot",
+    "why": "Inspect SQL structure or compare dialects without connecting to a database. Useful when reviewing a migration.",
+    "requires": "Python package; explicit source and target dialects",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "A successful translation still needs result tests in the target engine."
+  },
+  {
+    "category": "adf",
+    "title": "azure.datafactory.tools",
+    "author": "Kamil Nowinski and contributors",
+    "url": "https://github.com/Azure-Player/azure.datafactory.tools",
+    "why": "Review factory dependencies, environment substitutions and trigger handling when deploying ADF JSON from Git.",
+    "requires": "PowerShell; Azure identity and ADF for deployment; cloud activity can cost money",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Inspect deletion, factory-creation and trigger options before running a deployment."
+  },
+  {
+    "category": "local",
+    "title": "Pandera",
+    "author": "Union.ai and Pandera contributors",
+    "url": "https://github.com/unionai-oss/pandera",
+    "why": "Check column types and allowed values before accepting a file. Keep the rules beside the Python transformation.",
+    "requires": "Python and the extra for your chosen dataframe library; local file checks need no service",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Company-backed open-source project. Use the API and backend supported by your pinned version."
+  },
+  {
+    "category": "local",
+    "title": "Hypothesis",
+    "author": "Hypothesis contributors",
+    "url": "https://github.com/HypothesisWorks/hypothesis",
+    "why": "Find edge cases you did not put in a fixture. Describe a rule and generate inputs that try to break it.",
+    "requires": "Python test environment; no database service",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Generated inputs complement explicit business examples; define the property carefully."
+  },
+  {
+    "category": "local",
+    "title": "Faker",
+    "author": "Faker contributors",
+    "url": "https://github.com/joke2k/faker",
+    "why": "Create synthetic names, addresses and dates for examples. Set a seed when you need repeatable test inputs.",
+    "requires": "Python package; locale and seed configuration",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Synthetic generation does not anonymise an existing customer dataset; keep real personal data out."
+  },
+  {
+    "category": "practice",
+    "title": "Open Data Contract Standard",
+    "author": "Bitol contributors",
+    "url": "https://github.com/bitol-io/open-data-contract-standard",
+    "why": "Write down what a table means, who owns it and how fresh it should be. Review the agreement in Git.",
+    "requires": "YAML examples; JSON Schema-aware editor such as VS Code",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "An agreed file describes expectations; separate implementation and access tests must enforce them."
+  },
+  {
+    "category": "adf",
+    "title": "ADF testing series — companion code",
+    "author": "Richard Swinbank",
+    "url": "https://github.com/richardswinbank/community",
+    "why": "Pair the ADF testing articles with pipeline JSON, NUnit tests and release YAML in the adf-testing-series folder.",
+    "requires": "Historical .NET/Visual Studio examples; ADF and Azure SQL for integration tests; cloud costs apply",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Reference only: no repository licence was found. Obtain permission before copying or adapting code."
+  },
+  {
+    "category": "fabric",
+    "title": "Fabric CI/CD with GitHub Actions — companion sample",
+    "author": "Kevin Chant",
+    "url": "https://github.com/kevchant/GitHub-fabric-cicd-sample",
+    "why": "Inspect a practitioner workflow with separate workspace values and a reusable Python deployment script.",
+    "requires": "GitHub Actions, Python, Fabric capacity and an authorised Entra identity; cloud costs apply",
+    "kind": "repository",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "project",
+    "caution": "Review orphan-item deletion and add protected approvals before production use. Included Fabric samples originate from Microsoft."
+  },
+  {
+    "category": "databricks",
+    "title": "Up your CI/CD game with Databricks Asset Bundles and Automated Testing",
+    "author": "Connor Quinn · Advancing Analytics",
+    "url": "https://www.advancinganalytics.co.uk/blog/up-your-ci/cd-game-with-databricks-asset-bundles-and-automated-testing",
+    "why": "Separate valid configuration from a tested workload. Follow the author’s validate, deploy-to-test and run-tests sequence.",
+    "requires": "Databricks workspace, CLI and compute; native tests can cost money",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "consultancy",
+    "caution": "Uses the former Asset Bundles name; check current bundle documentation and your runtime.",
+    "publishedAt": "2024-10-01"
+  },
+  {
+    "category": "databricks",
+    "title": "Avoid Delta Live Table Pipeline Conflicts with Parameterised Databricks Asset Bundles",
+    "author": "Jordan Witcombe · Advancing Analytics",
+    "url": "https://www.advancinganalytics.co.uk/blog/avoid-delta-live-table-conflicts-with-databricks-asset-bundles",
+    "why": "See why two developers can collide on the same target tables. Review a separate user target and schema naming.",
+    "requires": "Databricks bundles, a workspace and pipeline compute; cloud costs apply",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "consultancy",
+    "caution": "Historical DLT terminology and example settings; verify current pipeline behaviour before adopting them.",
+    "publishedAt": "2025-01-24"
+  },
+  {
+    "category": "fabric",
+    "title": "Data engineering with Microsoft Fabric (incremental batch load)",
+    "author": "Ian Bradshaw",
+    "url": "https://www.ibradshaw.info/blog/41/",
+    "why": "Walk through moving an incremental file load from Databricks to Fabric, including notebook parameters and file paths.",
+    "requires": "Fabric workspace, capacity, lakehouse and notebooks; cloud costs apply",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "A dated migration walkthrough, not a current feature comparison. Check today’s utilities and retry behaviour.",
+    "publishedAt": "2024-02-12"
+  },
+  {
+    "category": "adf",
+    "title": "Testing Azure Data Factory in your CI/CD pipeline",
+    "author": "Richard Swinbank",
+    "url": "https://richardswinbank.net/adf/testing_azure_data_factory_in_your_cicd_pipeline",
+    "why": "Connect pipeline changes to functional tests. The article explains deployment, test-project build and isolated test configuration.",
+    "requires": "ADF, Azure DevOps, .NET/NUnit and Azure SQL test fixtures; cloud costs apply",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "Older SDK, identity and runner examples. Use current authentication guidance; publication date is not shown on the article."
+  },
+  {
+    "category": "fabric",
+    "title": "Unreliable logging in data factory pipelines",
+    "author": "Richard Swinbank",
+    "url": "https://richardswinbank.net/fabric/unreliable_logging_in_data_factory_pipelines",
+    "why": "Investigate a timestamp that differs between an activity log and the stored result. Compare the actual write when debugging.",
+    "requires": "Fabric, ADF or Synapse and a SQL target to reproduce; cloud costs apply",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "The author’s observed behaviour; reproduce on your platform before treating it as a current defect.",
+    "publishedAt": "2025-03-03"
+  },
+  {
+    "category": "practice",
+    "title": "Data Dies in Darkness",
+    "author": "Michael Kaminsky · Locally Optimistic",
+    "url": "https://locallyoptimistic.com/post/data-dies-in-darkness/",
+    "why": "Start with disagreeing report totals. Consider named metric owners and a feedback loop for finding stale assumptions.",
+    "requires": "Discussion with business owners and data consumers; no new tool required",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "An organisational opinion. Its broad collection/sharing advice is not a privacy or retention policy.",
+    "publishedAt": "2018-04-15"
+  },
+  {
+    "category": "local",
+    "title": "Why I Finally Pulled the Plug on Polars and Moved to DuckDB",
+    "author": "Daniel · Confessions of a Data Guy",
+    "url": "https://www.confessionsofadataguy.com/why-i-finally-pulled-the-plug-on-polars-and-moved-to-duckdb/",
+    "why": "Read a practitioner’s account of cloud file-reading friction. Include dependency and authentication behaviour in tool evaluation.",
+    "requires": "Reading only; the author’s reproduction involves AWS Lambda and S3",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "Workload-specific experience, not a benchmark or universal verdict on Polars. Test your own pinned environment.",
+    "publishedAt": "2026-04-10"
+  },
+  {
+    "category": "spark",
+    "title": "Testing PySpark Code",
+    "author": "MungingData",
+    "url": "https://www.mungingdata.com/pyspark/testing-pytest-chispa/",
+    "why": "Build small input/expected-output tests, including nulls. Read assertion failures to find the row that broke a transformation.",
+    "requires": "Python, pytest, chispa, compatible PySpark and Java; can use a local Spark session",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "Old PySpark/Poetry version examples; use the current chispa compatibility matrix. Publication date is not shown."
+  },
+  {
+    "category": "fabric",
+    "title": "Operationalize fabric-cicd to work with Microsoft Fabric and GitHub Actions",
+    "author": "Kevin Chant",
+    "url": "https://www.kevinrchant.com/2025/04/11/operationalize-fabric-cicd-to-work-with-microsoft-fabric-and-github-actions/",
+    "why": "Follow a worked release across test and production workspaces. Review how variables and parameters change by target.",
+    "requires": "Fabric capacity, GitHub Actions, Python and an authorised Entra identity; cloud costs apply",
+    "kind": "article",
+    "reviewedAt": "2026-10-05",
+    "sourceType": "practitioner",
+    "caution": "The sample can unpublish orphan items and omits approval setup. Review deletion, authentication and supported items first.",
+    "publishedAt": "2025-04-11"
   }
 ]

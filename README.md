@@ -13,23 +13,31 @@ Choose a task, run a small example, then check the platform-specific behaviour.
 | Turn a request into a checkable delivery | [Scope a data project](guides/scope-a-data-project.md) |
 | Run SQL and file checks in VS Code | [Local development](resources/local.md) |
 
+## Learn from the community
+
+[Browse community projects and field notes](community.md) for worked examples, debugging stories and engineering trade-offs.
+Start with Spark assertion failures, ADF testing, Fabric releases or shared Databricks development.
+Author experience, consultancy advice and project documentation are labelled on every entry.
+
 ## Browse by platform
 
 | Platform or practice | Resources |
 | --- | --- |
-| [Databricks](resources/databricks.md) | 11 |
-| [Microsoft Fabric](resources/fabric.md) | 12 |
-| [Azure Data Factory](resources/adf.md) | 6 |
-| [Spark and Delta](resources/spark.md) | 5 |
-| [Local Python, DuckDB and VS Code](resources/local.md) | 8 |
-| [Quality, governance and project work](resources/practice.md) | 5 |
+| [Databricks](resources/databricks.md) | 13 |
+| [Microsoft Fabric](resources/fabric.md) | 16 |
+| [Azure Data Factory](resources/adf.md) | 9 |
+| [Spark and Delta](resources/spark.md) | 7 |
+| [Local Python, DuckDB and VS Code](resources/local.md) | 14 |
+| [Quality, governance and project work](resources/practice.md) | 7 |
 
-47 attributed resources. Cloud references can require paid capacity or compute; the local recipes run on your computer.
+66 attributed resources. Cloud references can require paid capacity or compute; the local recipes run on your computer.
 
 ## How this list stays useful
 
 Each entry explains when it helps, who maintains it and what it needs.
 These are original selection notes, not copied articles or endorsements.
+Community sources include practitioner sites, consultancy blogs and project-maintained references; projects can have commercial backing.
+Dated experience is useful context. Check current platform documentation before treating it as present-day behaviour.
 GitHub projects are checked for repository status and licence metadata.
 An accessible link does not prove its sample has been executed.
 
